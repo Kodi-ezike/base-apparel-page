@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+#big1{
+    font-size: 50px;
+    font-weight: 300;
+    color: rgb(146, 81, 92);
+    letter-spacing: 10px;
+    margin-top: 3rem;
+}
+#big2{
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+#small{
+    color:rgb(190, 138, 147);
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.logo{
+    background: url(logo.svg);
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+form{
+    padding-top: 2rem;
+}
+input{
+    box-sizing: border-box;
+    width: 80%;
+    padding: 12px 12px;
+    border: 1px solid rgb(226, 185, 192);
+    outline: none;
+    border-radius: 20px;
+    margin: 20px 0; 
+    background-color: rgb(255, 247, 248);
+}
+input:focus{
+    background-color: transparent;
+}
+input:hover{
+    background-color:transparent ;
+    border:2px solid rgb(247, 156, 156);
+}
+::placeholder{
+    color: rgb(233, 188, 196);
+    font-family: Josefin Sans;
+}
+
+button{
+    /* background-image:linear-gradient(to right,hsl(0, 80%, 86%), hsl(0, 74%, 74%)); */
+    /* background-image: linear-gradient(to bottom, red, yellow, green), url(icon-arrow.svg); */
+    background-size: 10%;
+    background-image: url(icon-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 74%, 74%) ;
+    width: 80px;
+    cursor: pointer;
+    padding: 24px 20px;
+    padding-bottom: 1rem;
+    border: 1px solid rgb(226, 185, 192);
+    border-radius: 20px;
+    outline: none;
+    margin: -40px; 
+    margin-left: -70px;
+    
+}
+button:hover{
+    background-color: hsl(0, 80%, 86%);
+}
+.wrapper{
+    width: 60%;
+    height: auto;
+    background: url(bg-pattern-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(255, 247, 248);
+    
+}
+.left{
+    margin: 3rem 10rem;
+    
+}
+.pic{
+    background-image:url(hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+}
+.pic2{
+    display: none;
+}
+.container1{
+    display: flex;
+    /* justify-content: center; */
+}
+.container2{
+    width: 100vw;
+    height: 100vh;
+    /* margin:5vh 5vw; */
+    display: flex;
+}
+#demo{
+    font-size: 13px;
+    color: hsl(0, 93%, 68%);
+    margin-left: 1rem;
+    margin-top: 10px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media screen and (max-width:770px){
+.pic2{
+        background-image:url(hero-mobile.jpg);
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        width:auto;
+        height:200px;
+        display: block;
+}
+.pic{display: hide;}
+#big, #small{text-align: center;}
+#big1{padding-top: 3rem;}
+#big1, #big2{
+    font-size: 30px;
+}
+#small{
+    margin-right: auto;
+    padding: 0.5rem;
+}
+.logo{
+    background: url(logo.svg);
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    margin-top: 0.5rem;
+    background-repeat: no-repeat;
+    margin-bottom: -3rem;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin:0;
+}
+.left{
+    margin: 0px auto;
+    width: 100%;
+    
+}
+.logos{
+    margin-bottom: 0px auto;
+    padding: 1rem;
+}
+.wrapper{
+    background: none;
+    width: 100%;
+
+}
+.head{
+
+    padding: 2rem;
+    background-color: rgb(255, 249, 249) ;
+}
+button{
+    background-size: 20%;
+    width: 50px;
+    margin-left: -55px ;
+    padding: 23px 20px;
+    padding-bottom: 0.9rem;
+
+}
+input{
+    width: 90%;
+    background-color:rgb(255, 249, 249) ;
+    padding: 11px 11px;
+    margin-left: 1rem;
+}
+input:focus{
+    background-color: transparent;
+}
+input:hover{
+    background-color:transparent ;
+    border:2px solid rgb(247, 156, 156);
+}
+
+
+
+}
+@media(min-width:768px){
+.pic2{
+    height: 300px;
+}
+input{
+    width: 70%;
+    margin: auto;
+    
+}
+
+}
+@media screen and (max-width:1024px){
+#big1{
+    margin-top: -2rem;
+}
+}
